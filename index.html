@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Diện Tích & Chu Vi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tính Diện Tích & Chu Vi</h2>
+
+        <label for="shape">Chọn loại hình:</label>
+        <select id="shape">
+            <option value="rectangle">Hình Chữ Nhật</option>
+            <option value="circle">Hình Tròn</option>
+            <option value="triangle">Hình Tam Giác</option>
+        </select>
+
+        <div id="inputs"></div>
+
+        <button onclick="calculate()">Tính</button>
+
+        <div class="result" id="output"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
